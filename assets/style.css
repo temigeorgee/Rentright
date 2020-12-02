@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#143FAE;
+    --deepblue:#0C0233;
+    
+}
+
+.navbar-brand{
+    color: var(--primary);
+    /* margin-top: 1%; */
+    margin-left: 8%;
+    font-weight: 600;
+    line-height: 10px;
+}
+img span{
+    background-color: purplel;
+}
+.navbar-item{
+    color: #143FAE;
+    margin-top: 2%;
+    margin-right: 6%;
+    font-weight: 600;
+    line-height: 22px;
+   
+    
+}
+lottie-player{
+ padding-left: 12%;
+}
+
+ a span{
+    display:flex;
+    align-items: center;
+    padding-bottom: 12%;
+    /* color: yellow; */
+    /* text-decoration: none; */
+}
+
+b{
+     margin-left: -20px;
+}
+a:link {
+    text-decoration: none; 
+  }
+ a:visited {
+   text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+    /* color:var(--deepblue) ; */
+  }
+  a:active {
+    text-decoration: none;
+  }
+
+.hero{
+  
+    /* width: 1280px; */
+    max-height: 50vh;
+    left: 0px;
+    background-position: center center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+
+    background-image:url("https://images.unsplash.com/photo-1527030280862-64139fba04ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80")
+}
+
+    .jumbotron .overlay {
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+    }
+    .jumbotron .overlay {
+        width: 653px;
+        height: 159px;
+        position: absolute;
+        left: 550px;
+        top: 180px;
+        text-align: center;
+        background: rgba(12, 2, 51, 0.42);
+    }
+    h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.5;
+        color: #fff;
+
+    }
+  
+    .wrap{
+        background-color: #ffffff;
+        border-radius: 8px;
+        margin-top: 11.5%;
+        padding: 20px 20px;
+        position: relative;
+        z-index: 9;
+        width: 74.5%;
+        margin-left: 15%;
+        box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    }
+    .form-group .form-control {
+        border: 1px solid rgba(20, 63, 174, 0.05);
+        border-radius: 5px;
+        /* background-color: #d8e0f3; */
+        font-size: 14px;
+        height: 42px;
+        width: 222px;
+        margin-top: 10px;
+    }
+  
+    input::placeholder {
+        color: var(--primary) !important;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+      }
+   
+    .content>.active{
+        display: block;
+    }
+    .icon:before {
+        content: "\f041 ";
+    }
+    
+    .form-group label {
+        
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+        position: absolute;
+        left: 200px;
+        text-align: center;
+        top: 30px;
+        width: 40px;
+        color: var(--primary);
+    }
+    ul li{
+        display: inline-block;
+        line-height: 3;
+        margin-right: 20px !important;
+        vertical-align: text-top;  
+    }
+    
+    .form-control:focus {
+        border-color: var(--primary);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #143FAE;
+      }
+    select {
+        border: 1px solid rgba(20, 63, 174, 0.05);
+        border-radius: 5px;
+        background-color: #d8e0f3;
+        font-size: 14px;
+        height: 42px;
+        width: 189px;
+        color: var(--primary);
+        line-height: 16px;
+        font-size: 14px;
+    }
+    select:focus{
+        outline:#d8e0f3;
+        border-color: var(--primary);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #143FAE;
+    }
+    .form-control{
+        color: var(--primary);
+        border: 1px solid rgba(20, 63, 174, 0.05);
+        border-radius: 5px;
+        background-color: #d8e0f3;
+        font-size: 14px;
+        height: 42px;
+        width: 222px;
+        margin-top: 10px;
+    }
+    option{
+        background-color: white;
+        color: var(--primary);
+    }
+    .dropdown-menu label {
+        display: block;
+    }
+
+      .dropdown-toggle::after {
+        display: none; 
+    }
+    button{
+        font-size: 19px;
+    }
+    .fa-angle-down:before {
+        content: "\f107";
+        margin-left: 75px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    input[type=radio]{
+        padding-left: 80px;
+    }
+    .footer .form-control{
+        background-color: transparent;
+        border: 1px solid #8a8;
+    }
+    .submit{
+        background-color:#5f84e2 !important;
+        color: #fff;
+    }
+    .submit:hover{
+        color: #fff;
+        background-color: var(--primary) !important;
+    }
+    .subtopic{
+        color: var(--primary);
+        margin-top: 100px;
+        /* margin-bottom: 100px; */
+        margin-left: 450px;
+        font-weight: 600;
+        line-height:16px ;
+    }
+    .categories{
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    .categories p{
+        color: var(--primary);
+    }
+    /* .col-3{
+        flex-basis:30%;
+        min-width: 250px;
+        margin-bottom: 30px;
+    } */
+    .col-3 img{
+        width: 70%;
+
+    }
+.footer{
+    background: #0C0233;
+    color: #fff;
+    font-size: 16px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+/* .footer button{
+    background-color: yellow;
+} */
+.footer-col-1, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+
+.footer-col-4{
+    flex-basis: 12%;
+    /* text-align: center; */
+    margin-top: 5%;
+    margin-left: 45%;
+
+}
+ul{
+    list-style-type: none;
+}
+/*  */
+
+.credit{
+    text-align: center;
+}
+
+/* @media only screen and (max-width: 600px){
+
+    .overlay{
+        margin-left: 200px;
+    }
+} */
+
+ @media only screen and (max-width: 1200px){
+    /* .navbarItems,.navbar {
+        flex-direction: column;
+    } */
+  
+    
+    
+    
+    
+    /* .jumbotron .overlay {
+            margin-left: -400px;
+           
+        } */
+    
+ } 
+
+
+ @media only screen and (max-width: 900px){
+    /* .navbar {
+        flex-direction: row;
+    }  */
+   img{
+       width: 50px;
+       margin-right:5px ;
+   }
+    .navbar-brand{
+        margin-left: 0;
+        font-size: 16px;
+
+    }
+    lottie-player{
+        /* margin-left: 10px; */
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .navbar-item {
+       font-size: 16px;
+        margin-right: 0%;
+        font-weight: 600;
+        line-height: 22px;
+    }
+    .jumbotron .overlay {
+        width: 290px;
+        height: 180px;
+        position: relative;
+        left: 25px;
+        top: 12px;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-right: 20px;
+    }
+   .wrap{
+       margin-left: 45px;
+   }
+   .subtopic{
+    margin-top: 300px;
+    /* margin-bottom: 100px; */
+    margin-left: 23%;
+    font-weight: 600;
+    line-height: 16px;
+   }
+   .row{
+    text-align: center;
+}
+
+
+}
