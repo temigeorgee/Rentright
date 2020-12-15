@@ -27,14 +27,14 @@
     <a class="navbar-item  d-flex" href="#">
       <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_rw7SpS.json" background="transparent" speed="1"
         style="width: 80px; height: 80px;" hover autoplay></lottie-player>
-      <span>Call us</span>
+      <span class="pb-0">Call us</span>
     </a>
   </nav>
 
   <!-- HEADER -->
 
   <header>
-    <div class="jumbotron hero">
+    <div class="jumbotron hero d-flex flex-column align-items-center justify-content-center">
       <div class="overlay">
         <div class="container pl-5">
           <h2>Get the best rent price prediction in Lagos on Rentright</h2>
@@ -42,98 +42,104 @@
       </div>
      
         <div class="wrap content">
-          <div class="tabactive">
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="InputLocation" placeholder="Location">
-                  <label for="InputLocation">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  </label>
-                </div>
-              </li>
-              <li class="list-inline-item">
-                <div class="form-group">
-                  <select data-width="100%" data-style="btn-default" data-size="6"
-                    class="btn-group form-control selectpicker">
-                    <option value="">Type of apartment</option>
-                    <option value="">A Room</option>
-                    <option value="">1 Bedroom self contain</option>
-                    <option value="">2 Bedroom self contain</option>
-                    <option value="">3 Bedroom self contain</option>
-                    <option value="">Detached duplex</option>
-                    <option value="">Semi detached duplex</option>
-                    <option value="">Mansion</option>
-                  </select>
-                </div>
-              </li>
+          <div class="tabactive container">
+            <form class="row justify-content-center flex-md-row" action="">
+              <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
+                <input type="text" class="form-control position-relative" id="InputLocation" placeholder="Location">
+                <label class="mb-0 " for="InputLocation">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </label>
+              </div>
+              <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
+                <select data-width="100%" data-style="btn-default" data-size="6"
+                  class="btn-group form-control selectpicker">
+                  <option value="">Type of apartment</option>
+                  <option value="">A Room</option>
+                  <option value="">1 Bedroom self contain</option>
+                  <option value="">2 Bedroom self contain</option>
+                  <option value="">3 Bedroom self contain</option>
+                  <option value="">Detached duplex</option>
+                  <option value="">Semi detached duplex</option>
+                  <option value="">Mansion</option>
+                </select>
+              </div>
 
-              <li class="list-inline-item">
-                <div class="form-group">
-                  <select data-width="100%" data-style="btn-default" data-size="6"
-                    class="btn-group form-control selectpicker">
-                    <option value="">No of bathrooms</option>
-                    <option value="">1 </option>
-                    <option value="">2 </option>
-                    <option value="">3 </option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                  </select>
-                </div>
-              </li>
+              <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
+                <select data-width="100%" data-style="btn-default" data-size="6"
+                  class="btn-group form-control selectpicker">
+                  <option value="">No of bathrooms</option>
+                  <option value="">1 </option>
+                  <option value="">2 </option>
+                  <option value="">3 </option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                </select>
+              </div>
+              <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
+                <select data-width="100%" data-style="btn-default" data-size="6"
+                  class="btn-group form-control selectpicker">
+                  <option value="">No of toilets</option>
+                  <option value="">1 </option>
+                  <option value="">2 </option>
+                  <option value="">3 </option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                </select>
+              </div>
+              <div class="dropdown form-group">
+                <button class="btn form-control dropdown-toggle submit" type="button" id="dropdownMenuButton"
+                  data-toggle="modal" data-target="#exampleModal" aria-haspopup="true" aria-expanded="false">
+                  Search
+                  
+                </button>
+                
 
+              </div>
+
+            </form>
+            <!-- <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <div class="form-group">
-                  <select data-width="100%" data-style="btn-default" data-size="6"
-                    class="btn-group form-control selectpicker">
-                    <option value="">No of toilets</option>
-                    <option value="">1 </option>
-                    <option value="">2 </option>
-                    <option value="">3 </option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                  </select>
-                </div>
+               
+              </li>
+              <li class="list-inline-item">
+                
+              </li>
+              <li class="list-inline-item">
+              
+              </li>
+              <li class="list-inline-item">
               </li>
              
               <li class="list-inline-item">
-                <div class="dropdown ">
-                  <button class="btn form-control dropdown-toggle submit" type="button" id="dropdownMenuButton"
-                    data-toggle="modal" data-target="#exampleModal" aria-haspopup="true" aria-expanded="false">
-                    Search
-                    
-                  </button>
-                  
-
-                </div>
-
+                
               </li>
+            </ul> -->
 
-            </ul>
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
         </div>
-     
+       <!-- MODAL Area -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Rent Predictor</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        The Price is $300, 000
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     </div>
     <!-- NAV -->
@@ -166,12 +172,12 @@
   <div class="footer">
     <div class="container-fluid">
       <div class="row d-flex justify-content-around">
-        <div class="col-sm-12 col-md-3">
+        <div class="col-sm-12 col-md-4">
           <h3>
             Newsletter
           </h3>
           <form>
-            <div class="form-group">
+            <div class="form-group row">
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email">
               <button class="btn form-control dropdown-toggle submit" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
