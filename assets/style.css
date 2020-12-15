@@ -80,7 +80,7 @@ a:link {
     }
     .jumbotron .overlay {
         height: 159px;
-        /*position: absolute;*/
+        z-index: 10;
         text-align: center;
         background: rgba(12, 2, 51, 0.42);
         margin-bottom: 3%;
