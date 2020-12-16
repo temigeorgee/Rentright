@@ -207,10 +207,14 @@ a:link {
     .footer .form-control{
         background-color: transparent;
         border: 1px solid #8a8;
+        margin-left:2%;
+        width: 100%;
+        color: white;
     }
     .submit{
         background-color:#5f84e2 !important;
         color: #fff;
+       margin-left:.5%;
     }
     .submit:hover{
         color: #fff;
@@ -225,11 +229,12 @@ a:link {
         line-height:16px ;
     }
     .categories{
-        margin-left: 10%;
+        margin-right: 5%;
         margin-bottom: 10%;
     }
     .categories p{
         color: var(--primary);
+        text-align: center;
     }
     /* .col-3{
         flex-basis:30%;
@@ -259,7 +264,7 @@ a:link {
     margin-bottom: 20px;
 }
 .footer-col-1{
-    flex-basis: 30%;
+    /* flex-basis: 30%; */
 }
 
 
@@ -318,9 +323,9 @@ ul{
         padding: 4% ;
         margin-top:10%;
      } 
-     .btn{
+     /* .btn{
          width:160% !important;
-     } 
+     }  */
     }
     @media only screen and (max-width: 731px){
         .wrap{
@@ -336,9 +341,9 @@ ul{
     
      } 
 
-    .footer .form-control{
+    /* .footer .form-control{
         width: 85vw;
-    }
+    } */
    img{
        width: 50%;
        margin-right:5px ;
@@ -404,5 +409,9 @@ ul{
     }
     .form-group label {
          right: 1%;
+        }
+        .categories{
+            margin-right: 10%;
+        
         }
 }
