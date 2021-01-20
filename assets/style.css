@@ -25,7 +25,7 @@
 } */
 .navbar-item{
     color: #143FAE;
-    margin-top: 2%;
+    margin-top: 0%;
     margin-right: 6%;
     font-weight: 600;
     line-height: 22px;
@@ -80,9 +80,9 @@ a:link {
     }
     .jumbotron .overlay {
         height: 159px;
-        z-index: 10;
+        z-index: 1;
         text-align: center;
-        background: rgba(12, 2, 51, 0.42);
+        background-color: rgba(12, 2, 51, .42);
         margin-bottom: 3%;
     }
     h2{
@@ -210,11 +210,12 @@ a:link {
     .modal-body{
         padding: 40px;
     }
-  strong{
-        
+    .ml-1{
+        font-size: 120%;
     }
     .result-text{
         color:rgba(12, 2, 51, 0.8);
+        font-size:19px;
     }
     .modal-footer{
         color: #0C0233;
@@ -440,7 +441,9 @@ ul{
 
 
 } */
-
+.form-check {
+    padding-left: 10px;
+}
 
 @media only screen and (max-width: 680px){
     b{
@@ -562,4 +565,26 @@ ul{
             margin-right: 10%;
         
         }
+}
+@media only screen and (min-width : 1200px) {
+
+    img{
+        width: 100%;
+      
+    }
+     .mx-5{
+        margin-left: -300px !important;
+        /* background: blue; */
+    }
+    .mx-4{
+        margin-left: -300px !important;
+        /* background: blue;  */
+    }
+    .last{
+        margin-left: 220px !important;
+    }
+    .last-t{
+        margin-right: -400px !important;
+        /* background: blue;  */
+    }
 }
