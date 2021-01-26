@@ -30,71 +30,6 @@
       <span class="pb-0">Call us</span>
     </a>
   </nav>
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <!-- <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5> -->
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body text-center">
-        <h3>+234 802 9000 000</h3>
-      </div>
-      <div class="modal-footer">
-        <button class="btn form-control dropdown-toggle submit" type="button" 
-    style="width: 70%; margin-left: 15%;">
-        Call Us
-      </button>
-      </div>
-    </div>
-  </div>
-</div>
-  <!-- MODAL Area -->
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <!-- <h5 class="modal-title" id="exampleModalLabel">Rent Predict</h5> -->
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <!-- result -->
-          <b class="ml-1">N105,950 <span>-</span> N125,000</b>
-          <small>/per annum</small>
-          <p class="result-text">A Room apartment. Ketu,Lagos</p>
-          <!-- --------------loader------------------- -->
-          <!-- <div class="sk-circle">
-            <div class="sk-circle1 sk-child"></div>
-            <div class="sk-circle2 sk-child"></div>
-            <div class="sk-circle3 sk-child"></div>
-            <div class="sk-circle4 sk-child"></div>
-            <div class="sk-circle5 sk-child"></div>
-            <div class="sk-circle6 sk-child"></div>
-            <div class="sk-circle7 sk-child"></div>
-            <div class="sk-circle8 sk-child"></div>
-            <div class="sk-circle9 sk-child"></div>
-            <div class="sk-circle10 sk-child"></div>
-            <div class="sk-circle11 sk-child"></div>
-            <div class="sk-circle12 sk-child"></div>
-          </div> -->
-          <!-- -------------------end of loader-------------------------------- -->
-        </div>
-        <!-- <br>
-        Copyright © 2020 Rentright -->
-        <div class="modal-footer">
-          Subscribe to our newsletter
-        </div>
-      </div>
-      
-    </div>
-  </div>
 
   <!-- HEADER -->
 
@@ -108,56 +43,54 @@
      
         <div class="wrap content">
           <div class="tabactive container">
-            <form class="row justify-content-center flex-md-row" action="">
+            <form class="row justify-content-center flex-md-row" action="/" method="POST">
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
-                <input type="text" class="form-control position-relative" id="InputLocation" placeholder="Location">
+                <input type="text" class="form-control position-relative" id="InputLocation" placeholder="Location" name="location">
                 <label class="mb-0 " for="InputLocation">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
                 </label>
               </div>
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
                 <select data-width="100%" data-style="btn-default" data-size="6"
-                  class="btn-group form-control selectpicker">
-                  <option value="">Type of apartment</option>
-                  <option value="">A Room</option>
-                  <option value="">1 Bedroom self contain</option>
-                  <option value="">2 Bedroom self contain</option>
-                  <option value="">3 Bedroom self contain</option>
-                  <option value="">Detached duplex</option>
-                  <option value="">Semi detached duplex</option>
-                  <option value="">Mansion</option>
+                  class="btn-group form-control selectpicker" name="apartment">
+                  <option selected value="Type of apartment">Type of apartment</option>
+                  <option value="A Room">A Room</option>
+                  <option value="1 Bedroom self contain">1 Bedroom self contain</option>
+                  <option value="2 Bedroom self contain">2 Bedroom self contain</option>
+                  <option value="3 Bedroom self contain">3 Bedroom self contain</option>
+                  <option value="Detached duplex">Detached duplex</option>
+                  <option value="Semi detached duplex">Semi detached duplex</option>
+                  <option value="Mansion">Mansion</option>
                 </select>
               </div>
 
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
                 <select data-width="100%" data-style="btn-default" data-size="6"
-                  class="btn-group form-control selectpicker">
-                  <option value="">No of bathrooms</option>
-                  <option value="">1 </option>
-                  <option value="">2 </option>
-                  <option value="">3 </option>
-                  <option value="">4</option>
-                  <option value="">5</option>
+                  class="btn-group form-control selectpicker" name="bathrooms">
+                  <option selected value="No of bathrooms">No of bathrooms</option>
+                  <option value="1">1 </option>
+                  <option value="2">2 </option>
+                  <option value="3">3 </option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
                 </select>
               </div>
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
                 <select data-width="100%" data-style="btn-default" data-size="6"
-                  class="btn-group form-control selectpicker">
-                  <option value="">No of toilets</option>
-                  <option value="">1 </option>
-                  <option value="">2 </option>
-                  <option value="">3 </option>
-                  <option value="">4</option>
-                  <option value="">5</option>
+                  class="btn-group form-control selectpicker" name="toilets">
+                  <option selected value="No of toilets">No of toilets</option>
+                  <option value="1">1 </option>
+                  <option value="2">2 </option>
+                  <option value="3">3 </option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
                 </select>
               </div>
               <div class="dropdown form-group">
-                <button class="btn form-control dropdown-toggle submit" type="button" id="dropdownMenuButton"
-                  data-toggle="modal" data-target="#exampleModal" aria-haspopup="true" aria-expanded="false">
+                <button class="btn form-control dropdown-toggle submit" type="submit" >
                   Search
                   
                 </button>
-                
 
               </div>
 
