@@ -404,7 +404,7 @@ a:link {
         font-size: 19.68px;
         color: #434343;
     }
-    #tree{
+    .tree{
         width: 80%;
     }
     @media screen and (max-width: 575.98px){
@@ -614,13 +614,11 @@ ul{
    and (-webkit-min-device-pixel-ratio: 2)
 /* and (orientation : todo: you can add orientation or delete this comment)*/ {
                  /*IPhone 5 only CSS here*/
-                 .container {
-                    padding-right: 0px;
-                    padding-left: 0px;
-                }
-
                 .form-group .form-control {
                     width: 202px;
+                }
+                .wrap{
+                    width:80%;
                 }
                 }
  @media only screen and (max-width: 450px){
