@@ -24,13 +24,34 @@
       <b>Rentright</b>
     </a>
 
-    <a class="navbar-item  d-flex" href="#">
+    <a class="navbar-item  d-flex" href="#" data-toggle="modal" data-target="#exampleModalCenter">
       <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_rw7SpS.json" background="transparent" speed="1"
         style="width: 80px; height: 80px;" hover autoplay></lottie-player>
       <span class="pb-0">Call us</span>
     </a>
   </nav>
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5> -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <h3>+234 802 9000 000</h3>
+      </div>
+      <div class="modal-footer">
+        <button class="btn form-control dropdown-toggle submit" type="button" 
+    style="width: 70%; margin-left: 15%;">
+        Call Us
+      </button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- MODAL Area -->
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -80,7 +101,7 @@
   <header>
     <div class="jumbotron hero d-flex flex-column align-items-center justify-content-center">
       <div class="overlay">
-        <div class="container pl-5">
+        <div class="container pl-5 text-center">
           <h2>Get the best rent price prediction in Lagos on Rentright</h2>
         </div>
       </div>
@@ -141,23 +162,6 @@
               </div>
 
             </form>
-            <!-- <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-               
-              </li>
-              <li class="list-inline-item">
-                
-              </li>
-              <li class="list-inline-item">
-              
-              </li>
-              <li class="list-inline-item">
-              </li>
-             
-              <li class="list-inline-item">
-                
-              </li>
-            </ul> -->
 
           </div>
 
@@ -210,27 +214,40 @@
 
 
   <!-- SECTION -->
-  <div class="container ">
-    <center>
-      <h3 class="subtopic"> How it works</h3>
-    <div class="row mt-5 categories mr-sm-5">
-      <div class="col-lg-3 col-sm-12 categories-1 ml-4">
-        <img class="mx-5" src="assets/images/Finance-rafiki 1.svg" alt="">
-        <p class="mx-4 ">Best rent price prediction</p>
-      </div>
-      <div class="col-lg-3 col-sm-12 mr-5 mt-3 ml-5 categories-2">
-        <img class="ml-5 " src="assets/images/Group 667.svg" alt="">
 
-        <p class="mt-4 mx-1 ml-4">Location, type of apartment and amenities determines the price</p>
-      </div>
-      <div class="col-lg-3 col-sm-12 categories-3">
-        <img class="ml-5 last" src="assets/images/Address-rafiki 1.svg" alt="">
-        <p class="ml-5 last-t">Any location in Lagos is covered</p>
+  <div class="view2">
+    <div class="container">
+      <div class="mainfest">
+       <h3 class="text-center header mb-5" style="color: #143FAE;"> How it works</h3>
 
       </div>
+      <div class="row justify-content-around">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-4 info-flash">
+          <div class="icon d-flex align-items-center justify-content-center">
+           <img class="mb-0" src="assets/images/Finance-rafiki 1.svg">
+          </div>
+          <p class="body text-center">Best rent price prediction <br> you can think of</p>
+        </div>
+        <div class="w-100 d-lg-none"></div>
+        <div class="col-12 col-sm-10 col-md-8 col-lg-4 info-flash">
+          <div class="icon d-flex align-items-center justify-content-center">
+           <img class="mb-0 " src="assets/images/Group 667.svg" id="tree" >
+
+          </div>
+          <p class="body text-center">Prices are determined by <br> a few factors</p>
+
+        </div>
+        <div class="w-100 d-lg-none"></div>
+        <div class="col-12 col-sm-10 col-md-8 col-lg-4 info-flash">
+         <div class="icon d-flex align-items-center justify-content-center">
+           <img class="mb-0" src="assets/images/Address-rafiki 1.svg" alt="">
+          </div>
+          <p class="body text-center">Any location in Lagos <br> is covered</p>
+        </div>
+
+      </div>
+
     </div>
-    </center>
-    
   </div>
 
   <!-- FOOTER -->
@@ -257,12 +274,12 @@
             </div>
         </div>
         </form>
-        <div class=" col-sm-12 col-md-2 py-5 text-left ">
+        <div class=" col-sm-12 col-md-3 py-5 text-left ">
           <p>Are you considering letting out your Lagos apartment? Just reach out to us via <a
               href="">hello@rentright.com</a> or visit <a href="">www.lagosrentright.com</a></p>
         </div>
       </div>
-      <p class="credit">Copyright © 2020 Rentright. All Rights Reserved</p>
+      <p class="credit mt-4">Copyright © 2020 Rentright. All Rights Reserved</p>
     </div>
   </div>
   <!-- <script src="https://widget.flowai.app/w/YVl6ak5uV0s5fGN2QkVaS2dDUw==/flow-webclient-1.1.2.min.js"></script> -->

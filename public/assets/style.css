@@ -44,7 +44,7 @@ lottie-player{
 }
 
 b{
-     margin-left: -25px;
+     margin-left: -70px;
 }
 a:link {
     text-decoration: none; 
@@ -100,7 +100,7 @@ a:link {
         padding: 20px 20px;
         /* position: relative; */
         z-index: 9;
-        width: 74.5%;
+        /* width: 74.5%; */
         max-width: max-content;
         /* margin-left: 15%; */
         box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
@@ -117,9 +117,14 @@ a:link {
         width: 222px;
         margin-top: 10px;
     }
-  
-    input::placeholder {
+    #InputLocation::placeholder {
         color: var(--primary) !important;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+      }
+    input::placeholder {
+        color: #fff !important;
         font-size: 14px;
         line-height: 16px;
         font-weight: 400;
@@ -127,9 +132,6 @@ a:link {
    
     .content>.active{
         display: block;
-    }
-    .icon:before {
-        content: "\f041 ";
     }
     
     .form-group label {
@@ -369,31 +371,79 @@ a:link {
         color: #fff;
         background-color: var(--primary) !important;
     }
-    .subtopic{
-        color: var(--primary);
-        margin-top: 100px;
-        /* margin-bottom: 100px; */
-        text-align: center;
-        font-weight: 600;
-        line-height:16px ;
+  .view2{
+        padding-top: 70.52px;
+        padding-bottom: 70.52px;
     }
-    .categories{
-        margin-right: 5%;
-        margin-bottom: 10%;
+    .view2 .manifest {
+        position: relative;
+        margin-bottom: 60.68px;
     }
-    .categories p{
-        color: var(--primary);
-        text-align: center;
+    .view2 .manifest .header {
+        position: relative;
+        font-size: 2.46em;
     }
-    /* .col-3{
-        flex-basis:30%;
-        min-width: 250px;
-        margin-bottom: 30px;
-    } */
-    .col-3 img{
-        width: 70%;
+    .view2 .manifest .body {
+        position: relative;
+        font-size: 1.435em;
+        color: #434343;
+    }
+     .view2 .info-flash {
+        position: relative;
+     }
+     .view2 .info-flash .icon {
+        width: 181.22px;
+        height: 181.22px;
+        background-color: #fff;
+        border-radius: 100%;
+        box-shadow: 0 2px 10px rgba(0,0,0,.1);
+        margin: auto auto 32.8px;
+    }
+    .view2 .info-flash .body {
+        position: relative;
+        font-size: 19.68px;
+        color: #434343;
+    }
+    #tree{
+        width: 80%;
+    }
+    @media screen and (max-width: 575.98px){
+       .view2 {
+            padding-top: 150px;
+            padding-bottom: 50px;
+        }
+         .view2 .manifest {
+            margin-bottom: 48px;
+        }
+         .view2 .manifest .header {
+            font-size: 24px;
+            margin-bottom: 13px;
+            text-align: center;
+        }
+     .view2 .manifest .body {
+            font-size: 16px;
+            text-align: center;
+        }
+      .view2 .info-flash .icon {
+            width: 82px;
+            height: 82px;
+            margin-bottom: 25px;
+        }
+       .view2 .info-flash .body {
+            font-size: 14px;
+        }
+        /* #tree{
+            width: 50%;
+        } */
+    }
+    @media screen and (max-width: 991px){
+       .view2 .info-flash {
+            margin-bottom: 24px;
+        }
+    }
 
-    }
+
+/*   footer */
 .footer{
     background: #0C0233;
     color: #fff;
@@ -411,9 +461,6 @@ a:link {
 .footer-col-1, .footer-col-4{
     min-width: 250px;
     margin-bottom: 20px;
-}
-.footer-col-1{
-    /* flex-basis: 30%; */
 }
 
 
@@ -445,6 +492,23 @@ ul{
     padding-left: 10px;
 }
 
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    b{
+        margin-left: 0px;
+   } 
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    b{
+        margin-left: 0px;
+   } 
+   .col-md-2 {
+    max-width: 25.666667%;
+}
+   }
 @media only screen and (max-width: 680px){
     b{
         margin-left: -30px;
@@ -488,6 +552,7 @@ ul{
  @media only screen and (max-width: 1174px){
     .wrap{
         padding: 7%;
+        width: 74.5%;
         /* background-color:yellow; */
     
      } 
@@ -495,10 +560,10 @@ ul{
     /* .footer .form-control{
         width: 85vw;
     } */
-   img{
+   /* img{
        width: 50%;
        margin-right:5px ;
-   }
+   } */
     .navbar-brand{
         margin-left: 0;
         font-size: 16px;
@@ -535,6 +600,29 @@ ul{
    }
 }
 
+@media (device-height : 1088px) 
+   and (device-width : 688px)
+   and (-webkit-min-device-pixel-ratio: 2) {
+.wrap {
+    padding: 7%;
+    width: 48.5%;
+    /* background-color: yellow; */
+}
+   }
+@media (device-height : 568px) 
+   and (device-width : 320px) 
+   and (-webkit-min-device-pixel-ratio: 2)
+/* and (orientation : todo: you can add orientation or delete this comment)*/ {
+                 /*IPhone 5 only CSS here*/
+                 .container {
+                    padding-right: 0px;
+                    padding-left: 0px;
+                }
+
+                .form-group .form-control {
+                    width: 202px;
+                }
+                }
  @media only screen and (max-width: 450px){
     .hero{
         height: 75vh;
@@ -552,22 +640,30 @@ ul{
     }
 }
 
-@media only screen and (min-width: 1440px){
-  
+@media only screen and (min-width: 1140px){
+   body{
+       overflow-x: hidden;
+   }
+   
+
     .col-xl-3{
        max-width: 20% !important;
 
     }
     .form-group label {
-         right: 1%;
+         /* right: 1%; */
         }
         .categories{
-            margin-right: 10%;
+            margin-right: -20%;
+            /* background-color: blue; */
         
         }
 }
 @media only screen and (min-width : 1200px) {
-
+    b{
+        margin-left: -65px;
+        /* background-color: aquamarine; */
+   }
     img{
         width: 100%;
       
