@@ -24,7 +24,17 @@ app.get('/', (req, res, next) => {
 
 //=================================== Keras Query =============================================
 app.post('/', (req, res, next) => {
-    // console.log('Hit route');
+    const { location, apartment, bathrooms, toilets } = req.body;
+    const apartmentInfo = {
+        location,
+        apartment,
+        bathrooms,
+        toilets
+    };
+
+    console.log(apartmentInfo);
+    // res.status(200).json(apartmentInfo);
+    res.redirect('/');
 })
 
 
