@@ -584,11 +584,12 @@ ul{
     }
     .navbar-item {
        font-size: 16px;
-        margin-right: 0%;
         font-weight: 600;
         line-height: 22px;
     }
-
+    .mt-4{
+        margin-top: 1.2rem!important;
+    }
     h2{
         font-weight: 700;
         font-size: 20px;
