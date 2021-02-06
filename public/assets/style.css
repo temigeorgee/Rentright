@@ -82,7 +82,8 @@ a:link {
         height: 159px;
         z-index: 1;
         text-align: center;
-        background-color: rgba(12, 2, 51, .42);
+        /* background-color: rgba(12, 2, 51, .42); */
+        background-color: rgba(1, 7, 8, 0.4);
         margin-bottom: 3%;
     }
     h2{
