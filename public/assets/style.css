@@ -82,8 +82,8 @@ a:link {
         height: 159px;
         z-index: 1;
         text-align: center;
-        background-color: rgba(1, 7, 8, 0.59);
-        /* background-color: rgba(12, 2, 51, .42); */
+        /* background-color: rgba(255,255,255, .15); */
+        background-color: rgba(12, 2, 51, 0.42);
         /* background-color: rgba(1, 7, 8, 0.40); */
         margin-bottom: 3%;
     }
@@ -94,16 +94,18 @@ a:link {
         color: #fff;
 
     }
-  
+    .location{
+        position: relative;
+    }
     .wrap{
         background-color: #ffffff;
         border-radius: 8px;
         /* margin-top: 11.5%; */
-        padding: 20px 20px;
+        padding: 20px 0px;
         /* position: relative; */
         z-index: 9;
         /* width: 74.5%; */
-        max-width: max-content;
+        width: 90%;
         /* margin-left: 15%; */
         box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
     }
@@ -116,7 +118,7 @@ a:link {
         border-radius: 5px;
         font-size: 14px;
         height: 42px;
-        width: 222px;
+        width: 100%;
         margin-top: 10px;
     }
     #InputLocation::placeholder {
@@ -364,10 +366,12 @@ a:link {
         width: 100%;
         color: white;
     }
+   
     .submit{
         background-color:#5f84e2 !important;
         color: #fff;
        margin-left:.5%;
+       
     }
     .submit:hover{
         color: #fff;
@@ -552,8 +556,21 @@ ul{
     }
 
  @media only screen and (max-width: 1174px){
+    .jumbotron .overlay {
+        margin-top: 200px;
+    }
+    .view2 {
+        padding-top: 200.52px;
+        padding-bottom: 70.52px;
+    }
+    b {
+        margin-left: -20px;
+    }
     .wrap{
-        padding: 7%;
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:10px;
+        padding-bottom:10px;
         width: 77.5%;
         /* background-color:yellow; */
     
@@ -636,7 +653,7 @@ ul{
         
     }
     .wrap {
-        margin-left: 4%;
+        margin-left: -.2%;
     }
 }
 
