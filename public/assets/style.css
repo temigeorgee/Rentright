@@ -61,7 +61,7 @@ a:link {
   }
 
 .hero{
-    height: 60vh;
+    /* height: 60vh; */
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat ;
@@ -556,33 +556,23 @@ ul{
     }
 
  @media only screen and (max-width: 1174px){
-    .jumbotron .overlay {
-        margin-top: 200px;
-    }
-    .view2 {
-        padding-top: 200.52px;
-        padding-bottom: 70.52px;
-    }
     b {
         margin-left: -20px;
+    }
+    .form-group .form-control {
+      
+        width: 98%;
+     
     }
     .wrap{
         padding-left:15px;
         padding-right:15px;
-        padding-top:10px;
+        padding-top:15px;
         padding-bottom:10px;
         width: 77.5%;
-        /* background-color:yellow; */
+   
     
      } 
-
-    /* .footer .form-control{
-        width: 85vw;
-    } */
-   /* img{
-       width: 50%;
-       margin-right:5px ;
-   } */
     .navbar-brand{
         margin-left: 0;
         font-size: 16px;
@@ -625,7 +615,7 @@ ul{
 .wrap {
     padding: 7%;
     width: 48.5%;
-    /* background-color: yellow; */
+    
 }
    }
 @media (device-height : 568px) 
@@ -644,9 +634,7 @@ ul{
     .hero{
         height: 75vh;
     }
-    /* .form-group label {
-        right: 5%;
-    } */
+
     .jumbotron .overlay {
         margin-top:60%;
         margin-left:4%
@@ -667,19 +655,17 @@ ul{
        max-width: 20% !important;
 
     }
-    .form-group label {
-         /* right: 1%; */
-        }
+
         .categories{
             margin-right: -20%;
-            /* background-color: blue; */
+        
         
         }
 }
 @media only screen and (min-width : 1200px) {
     b{
         margin-left: -65px;
-        /* background-color: aquamarine; */
+    
    }
     img{
         width: 100%;
@@ -687,17 +673,17 @@ ul{
     }
      .mx-5{
         margin-left: -300px !important;
-        /* background: blue; */
+  
     }
     .mx-4{
         margin-left: -300px !important;
-        /* background: blue;  */
+     
     }
     .last{
         margin-left: 220px !important;
     }
     .last-t{
         margin-right: -400px !important;
-        /* background: blue;  */
+       
     }
 }
