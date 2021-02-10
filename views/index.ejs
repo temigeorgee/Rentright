@@ -31,6 +31,49 @@
     </a>
   </nav>
 
+  <!-- Modal -->
+  
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Rent Predictor</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div> -->
+
+            <div id="estimated_price">
+              <p class="boldPara">ESTIMATED PRICE</p>
+              <div class="estimated-price">
+                <span>From</span> <h4><span>&#8358;</span> <span class="lower"></span> - <span>&#8358;</span> <span class="upper"></span></h4>
+              </div>
+            </div>
+
+            <div id="requested">
+              <p class="boldPara">REQUESTED DETAILS</p>
+              <div class="requested-details">
+                <p class="apartLoc"></p>
+                <p class="apartType"></p>
+                <p class="bedrooms"></p>
+                <p class="toilets"></p>
+              </div>
+            </div>
+
+            
+        
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- HEADER -->
 
   <header>
@@ -43,51 +86,56 @@
      
         <div class="wrap content">
           <div class="tabactive container">
-            <form class="row justify-content-center flex-md-row" action="/" method="POST">
+            <form class="row justify-content-center flex-md-row" id="searchForm">
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
-                <input type="text" class="form-control position-relative" id="InputLocation" placeholder="Location" name="location">
+                <input type="text" class="form-control position-relative" id="InputLocation" placeholder="Location" name="location" required>
                 <label class="mb-0 " for="InputLocation">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
                 </label>
               </div>
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
                 <select data-width="100%" data-style="btn-default" data-size="6"
-                  class="btn-group form-control selectpicker" name="apartment">
-                  <option selected value="Type of apartment">Type of apartment</option>
-                  <option value="A Room">A Room</option>
-                  <option value="1 Bedroom self contain">1 Bedroom self contain</option>
-                  <option value="2 Bedroom self contain">2 Bedroom self contain</option>
-                  <option value="3 Bedroom self contain">3 Bedroom self contain</option>
-                  <option value="Detached duplex">Detached duplex</option>
-                  <option value="Semi detached duplex">Semi detached duplex</option>
-                  <option value="Mansion">Mansion</option>
+                  class="btn-group form-control selectpicker" name="apartment" id="InputApartment" required>
+                  <option selected value="">Type of apartment</option>
+                  <option value="flat / apartment">Flat / Apartment</option>
+                  <option value="detached duplex">Detached Duplex</option>
+                  <option value="terraced duplex">Terraced Duplex</option>
+                  <option value="semi detached duplex">Semi Detached Duplex</option>
+                  <option value="detached bungalow">Detached Bungalow</option>
+                  <option value="shop">Shop</option>
+                  <option value="terraced bungalow">Terraced Bungalow</option>
                 </select>
               </div>
 
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
                 <select data-width="100%" data-style="btn-default" data-size="6"
-                  class="btn-group form-control selectpicker" name="bathrooms">
-                  <option selected value="No of bathrooms">No of bathrooms</option>
+                  class="btn-group form-control selectpicker" name="bathrooms" id="InputBedrooms" required>
+                  <option selected value="">No of bedrooms</option>
                   <option value="1">1 </option>
                   <option value="2">2 </option>
                   <option value="3">3 </option>
                   <option value="4">4</option>
                   <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
                 </select>
               </div>
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
                 <select data-width="100%" data-style="btn-default" data-size="6"
-                  class="btn-group form-control selectpicker" name="toilets">
-                  <option selected value="No of toilets">No of toilets</option>
+                  class="btn-group form-control selectpicker" name="toilets" id="InputToilets" required>
+                  <option selected value="">No of batrooms / toilets</option>
                   <option value="1">1 </option>
                   <option value="2">2 </option>
                   <option value="3">3 </option>
                   <option value="4">4</option>
                   <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
                 </select>
               </div>
               <div class="dropdown form-group">
-                <button class="btn form-control dropdown-toggle submit" type="submit" >
+                <button class="btn form-control dropdown-toggle submit" type="submit" id="dropdownMenuButton"
+                  data-toggle="modal" data-target="#exampleModal" aria-haspopup="true" aria-expanded="false">
                   Search
                   
                 </button>
@@ -101,47 +149,8 @@
             </li>
           </ul>
         </div>
-       <!-- MODAL Area -->
-  <!-- Modal -->
-  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Rent Predictor</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        The Price is $300, 000
-        
-        <div class="sk-circle">
-          <div class="sk-circle1 sk-child"></div>
-          <div class="sk-circle2 sk-child"></div>
-          <div class="sk-circle3 sk-child"></div>
-          <div class="sk-circle4 sk-child"></div>
-          <div class="sk-circle5 sk-child"></div>
-          <div class="sk-circle6 sk-child"></div>
-          <div class="sk-circle7 sk-child"></div>
-          <div class="sk-circle8 sk-child"></div>
-          <div class="sk-circle9 sk-child"></div>
-          <div class="sk-circle10 sk-child"></div>
-          <div class="sk-circle11 sk-child"></div>
-          <div class="sk-circle12 sk-child"></div>
-        </div>
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
 
     </div>
-    <!-- NAV -->
 
   </header>
 
@@ -232,8 +241,9 @@
 
   <!--TENSOR FLOW SCRIPT-->
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  
   <!-- APP JS -->
-  <!-- <script src="assets/app.js"></script> -->
+  <script src="assets/app.js"></script>
 </body>
 
 </html>

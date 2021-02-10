@@ -474,7 +474,26 @@ a:link {
 ul{
     list-style-type: none;
 }
-/*  */
+
+/* Modal */
+.modal-body{
+    position: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.boldPara {
+    font-weight: bold;
+}
+
+#estimated_price {
+    margin-bottom: 50px;
+}
+
+.estimated-price{
+    position: flex;
+    flex-direction: row;
+}
 
 .credit{
     text-align: center;

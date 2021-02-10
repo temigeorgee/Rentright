@@ -1,6 +1,8 @@
-const   express     = require('express'),
-        app         = express(),
-        bodyParser  = require('body-parser');
+const express = require('express'),
+    app = express(),
+    axios = require('axios'),
+    request = require("request"),
+    bodyParser = require('body-parser');
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -10,10 +12,10 @@ app.use((req, res, next) => {
 });
 
 
-  
+
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
@@ -24,17 +26,24 @@ app.get('/', (req, res, next) => {
 
 //=================================== Keras Query =============================================
 app.post('/', (req, res, next) => {
-    const { location, apartment, bathrooms, toilets } = req.body;
-    const apartmentInfo = {
-        location,
-        apartment,
-        bathrooms,
-        toilets
-    };
+    const { $location, $apartment, $bedrooms, $toilets } = req.body;
+    
 
-    console.log(apartmentInfo);
-    // res.status(200).json(apartmentInfo);
-    res.redirect('/');
+    const items = {
+        type: $apartment,
+        area: $location,
+        bed: $bedrooms,
+        bath: $toilets,
+        toilet: $toilets
+    }
+
+    const jsonData = JSON.stringify(items);
+
+    axios.post('https://rent-right.herokuapp.com/predict/', jsonData)
+        .then(response => {
+            return res.status(200).json(response.data);
+        })
+        .catch(err => console.log(err));
 })
 
 
