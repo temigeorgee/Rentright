@@ -61,7 +61,7 @@ a:link {
   }
 
 .hero{
-    height: 60vh;
+    /* height: 60vh; */
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat ;
@@ -79,10 +79,13 @@ a:link {
         justify-content: center;
     }
     .jumbotron .overlay {
-        height: 159px;
+        height: 130px;
         z-index: 1;
         text-align: center;
-        background-color: rgba(12, 2, 51, .42);
+        /* background-color: rgba(255,255,255, .15); */
+        /* background-color: rgba(12, 2, 51, 0.42); */
+        /* background-color: rgba(1, 7, 8, 0.40); */
+        background: rgba(51,51,51,.5);
         margin-bottom: 3%;
     }
     h2{
@@ -92,16 +95,18 @@ a:link {
         color: #fff;
 
     }
-  
+    .location{
+        position: relative;
+    }
     .wrap{
         background-color: #ffffff;
         border-radius: 8px;
         /* margin-top: 11.5%; */
-        padding: 20px 20px;
+        padding: 20px 0px;
         /* position: relative; */
         z-index: 9;
         /* width: 74.5%; */
-        max-width: max-content;
+        width: 90%;
         /* margin-left: 15%; */
         box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
     }
@@ -114,7 +119,7 @@ a:link {
         border-radius: 5px;
         font-size: 14px;
         height: 42px;
-        width: 222px;
+        width: 100%;
         margin-top: 10px;
     }
     #InputLocation::placeholder {
@@ -362,10 +367,12 @@ a:link {
         width: 100%;
         color: white;
     }
+   
     .submit{
         background-color:#5f84e2 !important;
         color: #fff;
        margin-left:.5%;
+       
     }
     .submit:hover{
         color: #fff;
@@ -569,20 +576,23 @@ ul{
     }
 
  @media only screen and (max-width: 1174px){
+    b {
+        margin-left: -20px;
+    }
+    .form-group .form-control {
+      
+        width: 98%;
+     
+    }
     .wrap{
-        padding: 7%;
-        width: 74.5%;
-        /* background-color:yellow; */
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:15px;
+        padding-bottom:10px;
+        width: 77.5%;
+   
     
      } 
-
-    /* .footer .form-control{
-        width: 85vw;
-    } */
-   /* img{
-       width: 50%;
-       margin-right:5px ;
-   } */
     .navbar-brand{
         margin-left: 0;
         font-size: 16px;
@@ -594,11 +604,12 @@ ul{
     }
     .navbar-item {
        font-size: 16px;
-        margin-right: 0%;
         font-weight: 600;
         line-height: 22px;
     }
-
+    .mt-4{
+        margin-top: 1.2rem!important;
+    }
     h2{
         font-weight: 700;
         font-size: 20px;
@@ -625,7 +636,7 @@ ul{
 .wrap {
     padding: 7%;
     width: 48.5%;
-    /* background-color: yellow; */
+    
 }
    }
 @media (device-height : 568px) 
@@ -637,23 +648,21 @@ ul{
                     width: 202px;
                 }
                 .wrap{
-                    width:80%;
+                    width:85%;
                 }
                 }
  @media only screen and (max-width: 450px){
     .hero{
         height: 75vh;
     }
-    /* .form-group label {
-        right: 5%;
-    } */
+
     .jumbotron .overlay {
         margin-top:60%;
         margin-left:4%
         
     }
     .wrap {
-        margin-left: 4%;
+        margin-left: -.2%;
     }
 }
 
@@ -667,19 +676,17 @@ ul{
        max-width: 20% !important;
 
     }
-    .form-group label {
-         /* right: 1%; */
-        }
+
         .categories{
             margin-right: -20%;
-            /* background-color: blue; */
+        
         
         }
 }
 @media only screen and (min-width : 1200px) {
     b{
         margin-left: -65px;
-        /* background-color: aquamarine; */
+    
    }
     img{
         width: 100%;
@@ -687,17 +694,17 @@ ul{
     }
      .mx-5{
         margin-left: -300px !important;
-        /* background: blue; */
+  
     }
     .mx-4{
         margin-left: -300px !important;
-        /* background: blue;  */
+     
     }
     .last{
         margin-left: 220px !important;
     }
     .last-t{
         margin-right: -400px !important;
-        /* background: blue;  */
+       
     }
 }

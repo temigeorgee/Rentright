@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
   <title>Rentright</title>
   <!-- favicon -->
   <link rel="icon" href="/assets/images/Rentright-01.png" sizes="32x32" type="image/png">
@@ -19,16 +20,16 @@
 
 <body>
   <nav class="navbar">
-    <a class="navbar-brand" href="index.html" id="brand">
+    <a class="navbar-brand" href="https://rentright.herokuapp.com/" id="brand">
       <img src="/assets/images/rentright.svg" width="100" height="100" class="d-inline-block" alt="" loading="lazy">
       <b>Rentright</b>
     </a>
 
-    <a class="navbar-item  d-flex" href="#" data-toggle="modal" data-target="#exampleModalCenter">
+    <div class="navbar-item  d-flex" data-toggle="modal" data-target="#exampleModalCenter">
       <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_rw7SpS.json" background="transparent" speed="1"
         style="width: 80px; height: 80px;" hover autoplay></lottie-player>
-      <span class="pb-0">Call us</span>
-    </a>
+      <span class="pb-0 mt-4"><a href="tel:+1-303-499-7111">Call us</a></span>
+    </div>
   </nav>
 
   <!-- Modal -->
@@ -80,7 +81,7 @@
     <div class="jumbotron hero d-flex flex-column align-items-center justify-content-center">
       <div class="overlay">
         <div class="container pl-5 text-center">
-          <h2>Get the best rent price prediction in Lagos on Rentright</h2>
+          <h2>Get the best rent price prediction in Lagos on Rentright </h2>
         </div>
       </div>
      
@@ -90,7 +91,7 @@
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
                 <input type="text" class="form-control position-relative" id="InputLocation" placeholder="Location" name="location" required>
                 <label class="mb-0 " for="InputLocation">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <i class="fa fa-map-marker " aria-hidden="true"></i>
                 </label>
               </div>
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
@@ -145,9 +146,6 @@
             </form>
 
           </div>
-
-            </li>
-          </ul>
         </div>
 
     </div>
@@ -212,13 +210,13 @@
               <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"
                 aria-label="...">
               <span>
-                Send me updates when there is price changes</span>
+                Send me updates when there is a price change</span>
             </div>
         </div>
         </form>
         <div class=" col-sm-12 col-md-3 py-5 text-left ">
           <p>Are you considering letting out your Lagos apartment? Just reach out to us via <a
-              href="">hello@rentright.com</a> or visit <a href="">www.lagosrentright.com</a></p>
+              href="">hello@rentright.com</a> or visit <a href="https://rentright.herokuapp.com/">https://rentright.herokuapp.com/</a></p>
         </div>
       </div>
       <p class="credit mt-4">Copyright © 2020 Rentright. All Rights Reserved</p>
