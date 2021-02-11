@@ -553,17 +553,18 @@ ul{
     }
    
 
-        .navbar-item {
+    .navbar-item {
         font-size: 16px;
-         margin-left: -30%;
-         font-weight: 600;
-         line-height: 22px;
-         
-     } 
-     .wrap{
+        margin-left: -30%;
+        font-weight: 600;
+        line-height: 22px;
+        
+    } 
+    .wrap{
         padding: 4% ;
         margin-top:10%;
-     } 
+    } 
+
      /* .btn{
          width:160% !important;
      }  */
@@ -706,5 +707,37 @@ ul{
     .last-t{
         margin-right: -400px !important;
        
+    }
+}
+
+/* Iphone 6 and friends */
+@media (width: 375px) and (height: 667px) {
+    h4 {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .boldPara {
+        font-size: small;
+    }
+
+    .requested p {
+        font-size: medium;
+    }
+}
+
+/* Iphone 5 and friends */
+@media (width: 320px) and (height: 568px) {
+    h4 {
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    .boldPara {
+        font-size: small;
+    }
+
+    .requested p {
+        font-size: small;
     }
 }
