@@ -50,7 +50,7 @@
             </div> -->
 
             <div id="estimated_price">
-              <p class="boldPara">ESTIMATED PRICE</p>
+              <p class="boldPara">ESTIMATED PRICE / annum</p>
               <div class="estimated-price">
                 <span>From</span> <h4><span>&#8358;</span> <span class="lower"></span> - <span>&#8358;</span> <span class="upper"></span></h4>
               </div>
@@ -70,7 +70,7 @@
         
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeBtn">Close</button>
           </div>
         </div>
       </div>
@@ -89,15 +89,46 @@
           <div class="tabactive container">
             <form class="row justify-content-center flex-md-row" id="searchForm">
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
-                <input type="text" class="form-control position-relative" id="InputLocation" placeholder="Location" name="location" required>
+                <!-- <input type="text" class="form-control position-relative" id="InputLocation" placeholder="Location" name="location" required>
                 <label class="mb-0 " for="InputLocation">
                   <i class="fa fa-map-marker " aria-hidden="true"></i>
-                </label>
+                </label> -->
+                <select data-width="100%" data-style="btn-default" data-size="6"
+                  class="btn-group form-control selectpicker" name="location" id="InputLocation" required>
+                  <option selected value="Location">Location</option>
+                  <option value="Maryland">Maryland</option>
+                  <option value="Lekki">Lekki</option>
+                  <option value="Ikeja">Ikeja</option>
+                  <option value="Victoria Island">Victoria Island</option>
+                  <option value="Oniru">Oniru</option>
+                  <option value="Ojo">Ojo</option>
+                  <option value="Ajah">Ajah</option>
+                  <option value="Gbagada">Gbagada</option>
+                  <option value="Kosofe">Kosofe</option>
+                  <option value="Lagos Mainland">Lagos Mainland</option>
+                  <option value="Abule">Abule</option>
+                  <option value="Akoka">Akoka</option>
+                  <option value="Anthony Village">Anthony Village</option>
+                  <option value="Lawanson">Lawanson</option>
+                  <option value="Surulere">Surulere</option>
+                  <option value="Ikorodu">Ikorodu</option>
+                  <option value="Alimosho">Alimosho</option>
+                  <option value="Ogba">Ogba</option>
+                  <option value="Agege">Agege</option>
+                  <option value="Yaba">Yaba</option>
+                  <option value="Ogudu">Ogudu</option>
+                  <option value="Aguda">Aguda</option>
+                  <option value="Ojuelegba">Ojuelegba</option>
+                  <option value="Iyana Ipaja">Iyana Ipaja</option>
+                  <option value="Iwaya">Iwaya</option>
+                  <option value="Ladipo">Ladipo</option>
+                  <option value="Dolphin Estate">Dolphin Evalue
+                </select>
               </div>
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
                 <select data-width="100%" data-style="btn-default" data-size="6"
                   class="btn-group form-control selectpicker" name="apartment" id="InputApartment" required>
-                  <option selected value="">Type of apartment</option>
+                  <option selected value="Type of apartment">Type of apartment</option>
                   <option value="flat / apartment">Flat / Apartment</option>
                   <option value="detached duplex">Detached Duplex</option>
                   <option value="terraced duplex">Terraced Duplex</option>
@@ -111,7 +142,7 @@
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
                 <select data-width="100%" data-style="btn-default" data-size="6"
                   class="btn-group form-control selectpicker" name="bathrooms" id="InputBedrooms" required>
-                  <option selected value="">No of bedrooms</option>
+                  <option selected value="No of bedrooms">No of bedrooms</option>
                   <option value="1">1 </option>
                   <option value="2">2 </option>
                   <option value="3">3 </option>
@@ -124,7 +155,7 @@
               <div class="form-group col-12 col-md-6 col-lg-4 col-xl-3 px-0 px-xl-2">
                 <select data-width="100%" data-style="btn-default" data-size="6"
                   class="btn-group form-control selectpicker" name="toilets" id="InputToilets" required>
-                  <option selected value="">No of batrooms / toilets</option>
+                  <option selected value="No of bathrooms / toilets">No of bathrooms / toilets</option>
                   <option value="1">1 </option>
                   <option value="2">2 </option>
                   <option value="3">3 </option>
