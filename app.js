@@ -1,7 +1,6 @@
 const express = require('express'),
     app = express(),
     axios = require('axios'),
-    request = require("request"),
     bodyParser = require('body-parser');
 
 app.use((req, res, next) => {
