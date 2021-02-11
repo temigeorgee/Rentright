@@ -21,8 +21,8 @@ $('#searchForm').on('submit', async function (e) {
         $('#InputBedrooms').val('No of bedrooms');
         $('#InputToilets').val('No of bathrooms / toilets');
 
-        // const feedback = await fetch('http://localhost:3000/', {
-        const feedback = await fetch('https://rentright.herokuapp.com/', {
+        const feedback = await fetch('http://localhost:3000/', {
+        // const feedback = await fetch('https://rentright.herokuapp.com/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

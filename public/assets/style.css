@@ -741,3 +741,19 @@ ul{
         font-size: small;
     }
 }
+
+/* Iphone 6s and friends */
+@media (width: 414px) and (height: 736px) {
+    h4 {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .boldPara {
+        font-size: small;
+    }
+
+    .requested p {
+        font-size: small;
+    }
+}
